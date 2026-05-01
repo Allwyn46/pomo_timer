@@ -1,0 +1,35 @@
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import {
+    Card,
+    CardAction,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+
+const Home = () => {
+    return (
+        <div className="mt-6">
+            <Card className="relative mx-auto w-full max-w-sm pt-0">
+                {/* <div className="absolute inset-0 z-30 aspect-video bg-black/35" /> */}
+                <h1 className="my-5 text-center text-7xl">25:00</h1>
+                <CardHeader>
+                    <CardAction>
+                        {/* <Badge variant="secondary">Featured</Badge> */}
+                    </CardAction>
+                    <CardTitle className="text-center">
+                        Pomodoro Timer
+                    </CardTitle>
+                    <CardDescription></CardDescription>
+                </CardHeader>
+                <CardFooter>
+                    <Button className="w-full" size="lg">Start</Button>
+                </CardFooter>
+            </Card>
+        </div>
+    )
+}
+
+export default Home
