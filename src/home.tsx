@@ -78,22 +78,26 @@ const Home = () => {
                 <CardFooter className="flex gap-2">
                     {" "}
                     {/* ← gap for two buttons */}
-                    <Button
-                        className="w-full"
-                        size="lg"
-                        onClick={toggle}
-                        disabled={elapsed === 0}
-                    >
-                        {running ? "Pause" : "Start"}
-                    </Button>
-                    {/* <Button
-                        className="w-full"
-                        size="lg"
-                        variant="outline"
-                        onClick={reset}
-                    >
-                        Reset
-                    </Button> */}
+                    <div className="w-full">
+                        <Button
+                            className="w-full"
+                            size="lg"
+                            onClick={toggle}
+                            disabled={elapsed === 0}
+                        >
+                            {running ? "Pause" : "Start"}
+                        </Button>
+                        {
+                            <Button
+                                className="w-full mt-4"
+                                size="lg"
+                                variant="outline"
+                                onClick={reset}
+                            >
+                                Reset
+                            </Button>
+                        }
+                    </div>
                 </CardFooter>
             </Card>
         </div>
